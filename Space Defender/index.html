@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SPACE DEFENDER</title>
+    </head>
+    <body>
+        <div id="gameOverScreen" style="display: none;">
+            <h1>Game Over</h1>
+            <button id="restartButton">Restart</button>
+        </div>
+        <p></p>
+        <fieldset style="border: 2px solid black; border-radius: 10px; padding: 10px;">
+            <legend style="color: black; font-weight: bold;">Space Defender</legend>
+            <canvas id="gameCanvas" width="600" height="600"></canvas>
+        </fieldset>
+
+        <div id="scoreDisplay">Punteggio: 0</div>
+        
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+        <script src="script/config.js" type="module"></script>
+        <script src="script/models/sprite.js" type="module"></script>
+        <script src="script/models/sound.js" type="module"></script>
+        <script src="script/models/player.js" type="module"></script>
+        <script src="script/models/projectile.js" type="module"></script>
+        <script src="script/models/enemy.js" type="module"></script>
+        <script src="script/logic/game.js" type="module"></script>
+        <script src="script/app.js" type="module"></script>
+    </body>
+</html>
